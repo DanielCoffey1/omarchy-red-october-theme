@@ -88,7 +88,10 @@ To install this customized theme through Omarchy:
 
 ```bash
 omarchy-theme-install https://github.com/DanielCoffey1/omarchy-sapphire-theme.git
+omarchy-theme-set sapphire
 ```
+
+**Note**: The `theme-set` hook automatically installs the custom waybar configuration when you set the theme! Your waybar will be updated to the bottom-positioned layout with custom styling.
 
 ### Full Configuration Setup
 
@@ -111,8 +114,8 @@ To replicate my complete setup with custom waybar:
    # Hyprland
    cp -r configs/hypr/* ~/.config/hypr/
 
-   # Waybar
-   cp configs/waybar/* ~/.config/waybar/
+   # Waybar (automatically installed by theme-set hook, but can be manually updated)
+   # cp configs/waybar/* ~/.config/waybar/
 
    # Alacritty
    cp configs/alacritty/alacritty.toml ~/.config/alacritty/

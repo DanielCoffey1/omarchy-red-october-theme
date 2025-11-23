@@ -1,9 +1,28 @@
 #!/bin/bash
 
-# Omarchy hook: Update waybar colors with pywal when theme changes
+# Omarchy hook: Install custom waybar configs and update colors when theme changes
 # This hook is called with the snake-cased name of the theme that has just been set.
 
 WALLPAPER="$HOME/.config/omarchy/current/background"
+THEME_DIR="$HOME/.config/omarchy/current/theme"
+
+# Install custom waybar configuration
+WAYBAR_CONFIG_SOURCE="$THEME_DIR/../../configs/waybar"
+WAYBAR_CONFIG_DEST="$HOME/.config/waybar"
+
+if [ -d "$WAYBAR_CONFIG_SOURCE" ]; then
+    # Create waybar config directory if it doesn't exist
+    mkdir -p "$WAYBAR_CONFIG_DEST"
+
+    # Copy waybar configs
+    if [ -f "$WAYBAR_CONFIG_SOURCE/config.jsonc" ]; then
+        cp "$WAYBAR_CONFIG_SOURCE/config.jsonc" "$WAYBAR_CONFIG_DEST/config.jsonc"
+    fi
+
+    if [ -f "$WAYBAR_CONFIG_SOURCE/style.css" ]; then
+        cp "$WAYBAR_CONFIG_SOURCE/style.css" "$WAYBAR_CONFIG_DEST/style.css"
+    fi
+fi
 
 # Check if pywal is installed
 if ! command -v wal &> /dev/null; then
