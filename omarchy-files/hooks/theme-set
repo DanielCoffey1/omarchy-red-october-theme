@@ -14,7 +14,10 @@ if [ -d "$WAYBAR_CONFIG_SOURCE" ]; then
     # Create waybar config directory if it doesn't exist
     mkdir -p "$WAYBAR_CONFIG_DEST"
 
-    # Copy waybar configs
+    # Copy all waybar config files (config.jsonc, style.css, and any other files)
+    cp -r "$WAYBAR_CONFIG_SOURCE"/* "$WAYBAR_CONFIG_DEST/" 2>/dev/null || true
+    
+    # Ensure specific files are copied if they exist
     if [ -f "$WAYBAR_CONFIG_SOURCE/config.jsonc" ]; then
         cp "$WAYBAR_CONFIG_SOURCE/config.jsonc" "$WAYBAR_CONFIG_DEST/config.jsonc"
     fi
