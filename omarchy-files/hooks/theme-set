@@ -7,7 +7,7 @@ WALLPAPER="$HOME/.config/omarchy/current/background"
 THEME_DIR="$HOME/.config/omarchy/current/theme"
 
 # Install custom waybar configuration
-WAYBAR_CONFIG_SOURCE="$THEME_DIR/../../configs/waybar"
+WAYBAR_CONFIG_SOURCE="$THEME_DIR/configs/waybar"
 WAYBAR_CONFIG_DEST="$HOME/.config/waybar"
 
 if [ -d "$WAYBAR_CONFIG_SOURCE" ]; then
