@@ -1,25 +1,25 @@
-    @define-color background     #060d1f;
-    @define-color foreground     #E0F7FA;
-    @define-color black          #060d1f;
-    @define-color red            #e95c4b;
-    @define-color green          #6488EA;
-    @define-color yellow         #d7ebe9;
-    @define-color blue           #f2c8cb;
-    @define-color magenta        #8cc7bf;
-    @define-color cyan           #fef4d7;
+    @define-color background     #000000;
+    @define-color foreground     #ffffff;
+    @define-color black          #000000;
+    @define-color red            #ff0000;
+    @define-color green          #cc0000;
+    @define-color yellow         #ff3333;
+    @define-color blue           #990000;
+    @define-color magenta        #ff0000;
+    @define-color cyan           #cc0000;
     @define-color white          #ffffff;
-    @define-color bright_black   #1A3A85;
-    @define-color bright_red     #e95c4b;
-    @define-color bright_green   #6488EA;
-    @define-color bright_yellow  #d7ebe9;
-    @define-color bright_blue    #f2c8cb;
-    @define-color bright_magenta #8cc7bf;
-    @define-color bright_cyan    #fef4d7;
+    @define-color bright_black   #1a1a1a;
+    @define-color bright_red     #ff0000;
+    @define-color bright_green   #cc0000;
+    @define-color bright_yellow  #ff3333;
+    @define-color bright_blue    #990000;
+    @define-color bright_magenta #ff0000;
+    @define-color bright_cyan    #cc0000;
     @define-color bright_white   #ffffff;
 
-    @define-color accent_bg_color @blue;
+    @define-color accent_bg_color @red;
     @define-color accent_fg_color @background;
-    @define-color accent_color @cyan;
+    @define-color accent_color @red;
 
     @define-color window_bg_color @background;
     @define-color window_fg_color @foreground;
@@ -62,7 +62,7 @@
     @define-color theme_text_color @foreground;
     @define-color theme_bg_color @background;
     @define-color theme_base_color @black;
-    @define-color theme_selected_bg_color @blue;
+    @define-color theme_selected_bg_color @red;
     @define-color theme_selected_fg_color @background;
     @define-color insensitive_bg_color @background;
     @define-color insensitive_fg_color @bright_black;
@@ -71,7 +71,7 @@
     @define-color theme_unfocused_text_color @foreground;
     @define-color theme_unfocused_bg_color @background;
     @define-color theme_unfocused_base_color @black;
-    @define-color theme_unfocused_selected_bg_color @blue;
+    @define-color theme_unfocused_selected_bg_color @red;
     @define-color theme_unfocused_selected_fg_color @background;
     @define-color unfocused_insensitive_color @bright_black;
     @define-color unfocused_borders alpha(@foreground, 0.1);
@@ -106,7 +106,7 @@
     }
 
     messagedialog button:hover {
-        background-color: @blue;
+        background-color: @red;
     }
 
     banner revealer widget {

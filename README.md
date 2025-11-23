@@ -1,21 +1,21 @@
-# Omarchy Sapphire Theme - Complete Setup
+# Omarchy Red October Theme - Complete Setup
 
-This repository contains my complete Omarchy desktop environment configuration using the Sapphire theme with custom modifications. It includes everything from Hyprland window manager configuration to terminal emulator theming, custom waybar styling, and more.
+This repository contains my complete Omarchy desktop environment configuration using the Red October theme with custom modifications. It includes everything from Hyprland window manager configuration to terminal emulator theming, custom waybar styling, and more.
 
 ## What Makes This Different
 
-This is a customized fork of the original Sapphire theme with:
+This is a customized Red October theme with:
 - **Custom Waybar configuration** - Bottom-positioned bar with personalized module layout and styling
 - **Complete working setup** - All configuration files needed for a full desktop environment
 - **Ready to use** - Pre-configured and tested on my system
 
-## About Sapphire Theme
+## About Red October Theme
 
-Inspired by the deep, timeless brilliance of sapphire gemstones — the rich blue base evokes clarity and depth, while touches of green, yellow and red bring life, precision and energy. This palette is chosen to reflect both calm concentration (blue) and subtle vitality (the accent colours), striking a balance between immersion and alertness. Crafted for a workspace that looks poised yet dynamic — where focus doesn't feel sterile, but alive with possibility.
+Inspired by the bold and striking aesthetic of Red October — a jet black base with vibrant red accents that evoke power, precision, and intensity. The deep black background provides focus and clarity, while the red highlights bring energy and emphasis to key elements. This palette creates a workspace that is both immersive and dynamic — where darkness meets intensity, and every red accent commands attention.
 
 ## Screenshots
-<img width="2560" height="1440" alt="screenshot-2025-10-23_06-27-38" src="https://github.com/user-attachments/assets/90cd0a7a-4f4f-4bfa-b015-6ec4752f362c" />
-<img width="2560" height="1440" alt="screenshot-2025-11-02_00-30-17" src="https://github.com/user-attachments/assets/e3fe7ebc-51f7-4036-82e3-a6e4dd8416a5" />
+
+_Add your screenshots here_
 
 ## What's Included
 
@@ -36,7 +36,7 @@ This repository contains configurations for:
 - **ghostty.conf** - Ghostty terminal theme
 - **vscode.json** - VS Code theme settings
 - **chromium.theme** - Chromium browser theme
-- **system24-Sapphire.css** - Vesktop/Discord theme
+- **system24-Sapphire.css** - Vesktop/Discord theme (legacy name)
 - **backgrounds/** - Wallpaper images
 - **icons.theme** - Icon theme configuration
 
@@ -82,13 +82,13 @@ This setup requires the following packages:
 
 ## Installation
 
-### Install the Sapphire Theme
+### Install the Red October Theme
 
 To install this customized theme through Omarchy:
 
 ```bash
-omarchy-theme-install https://github.com/DanielCoffey1/omarchy-sapphire-theme.git
-omarchy-theme-set sapphire
+omarchy-theme-install https://github.com/DanielCoffey1/omarchy-red-october-theme.git
+omarchy-theme-set red-october
 ```
 
 **Note**: The `theme-set` hook automatically installs the custom waybar configuration when you set the theme! Your waybar will be updated to the bottom-positioned layout with custom styling.
@@ -99,14 +99,14 @@ To replicate my complete setup with custom waybar:
 
 1. **Clone this repository**:
    ```bash
-   git clone https://github.com/DanielCoffey1/omarchy-sapphire-theme.git
-   cd omarchy-sapphire-theme
+   git clone https://github.com/DanielCoffey1/omarchy-red-october-theme.git
+   cd omarchy-red-october-theme
    ```
 
 2. **Install the theme files** (if using Omarchy):
    ```bash
    # The theme files in the root directory can be installed via omarchy-theme-install
-   # or manually copied to ~/.config/omarchy/themes/sapphire/
+   # or manually copied to ~/.config/omarchy/themes/red-october/
    ```
 
 3. **Copy main configuration files**:
@@ -136,7 +136,7 @@ To replicate my complete setup with custom waybar:
 
 5. **Set the theme** (if using Omarchy):
    ```bash
-   omarchy-theme-set sapphire
+   omarchy-theme-set red-october
    ```
 
 6. **Reload your environment**:
@@ -157,10 +157,10 @@ This setup uses the [Pixel Theme](https://github.com/bjarneo/pixel.nvim) which a
 - Check: https://github.com/bjarneo/pixel.nvim
 - Make sure Lazyvim is up to date: `:Lazy`
 
-### VSCode Theme
-- Theme: Sapphire Theme
-- Extension ID: `Tyriar.theme-sapphire`
-- Install manually: Open VSCode > Extensions > Search "Sapphire Theme"
+### VSCode/Cursor Theme
+- Theme: Red October Theme
+- Custom color theme with jet black background and red accents
+- Apply via workbench.colorCustomizations in settings.json
 
 ## Customization
 
@@ -173,7 +173,7 @@ The main configuration files in `configs/` reference the theme files through Oma
 ## Structure
 
 ```
-omarchy-sapphire-theme/
+omarchy-red-october-theme/
 ├── README.md                    # This file
 ├── LICENSE                      # MIT License
 ├── preview.png                  # Theme preview
@@ -191,7 +191,7 @@ omarchy-sapphire-theme/
 
 ## Credits
 
-- Original Sapphire theme by [HANCORE-linux](https://github.com/HANCORE-linux/omarchy-sapphire-theme)
+- Red October theme customization by DanielCoffey1
 - Custom waybar configuration and modifications by DanielCoffey1
 - Omarchy desktop environment by the Omarchy team
 
